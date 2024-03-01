@@ -31,7 +31,7 @@ if [ -z "${HOSTNAME_CHECK}" ];then
 fi
 
 cd ~
-setup_path="/var/var/www"
+setup_path="/var/www"
 python_bin=$setup_path/server/panel/pyenv/bin/python
 cpu_cpunt=$(cat /proc/cpuinfo | grep processor | wc -l)
 panelPort=$(expr $RANDOM % 55535 + 10000)
